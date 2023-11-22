@@ -1,0 +1,6 @@
+<?php
+	include"koneksi.php";
+	
+	$halo = $_REQUEST['variableName'];
+	echo $halo;
+?>

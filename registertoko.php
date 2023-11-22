@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Toko</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+	<form action="registertokoprocess.php" method="post">
+<style>
+    *{
+        font-family: Roboto;
+    }
+    .container img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+    h3{
+        font-weight: bold;
+        text-align: center;
+    }
+    .footer-bottom{
+      height: 80px;
+      background-color: #212529;
+    }
+
+    .footer-bottom p{
+      font-family: Roboto;
+      font-size: 25px;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 80px;  
+    }
+    .backgrondd {
+      background: #146c94;
+      background: -webkit-linear-gradient(to right, rgba(20,108,148,0.7), rgba(25,167,206,0.7));
+      background: linear-gradient(to right, rgba(20,108,148,0.7), rgba(25,167,206,0.7))
+    }
+
+
+</style>
+
+<!-- Navbarnya  -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark" data-bs-theme="dark">
+        <div class="container">
+        	<img src="Logo.png" alt="">
+          <!--<a class="navbar-brand " href="#">Service4U</a>-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.php">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="selectrole.php">Register</a>
+              </li>			
+            </ul>		  
+          </div>
+        </div>
+      </nav>
+
+  <!-- Background -->
+  <div class="bg-image" style="
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5d05a89ce31cc400016b2a4a/1566692273014-SAPEWZUKM81695LSA4U3/MAIN.png?format=2500w');
+  height: 100vh;">
+
+  <!-- Buat warna background -->
+  <div class="backgrondd">
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div class="card shadow-2-strong card-registration bg-dark" style="border-radius: 15px;">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-white">REGISTRASI TOKO</h3>
+                  <form>
+                    
+                    <!-- Baris 1 -->
+                    <div class="row">
+                      <!-- Nama toko -->
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                            <label class="form-label text-white" for="firstName">Nama Toko</label>
+                            <input type="text" name="namatoko" id="firstName" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                      <!-- Username toko -->
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label class="form-label text-white" for="lastName">Username Toko</label>
+                            <input type="text" name="usernametoko" id="lastName" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Baris 2 -->
+                    <div class="row">
+                      <!-- Phone number -->
+                      <div class="col-md-6 mb-4 pb-2">
+                        <div class="form-outline">
+                            <label class="form-label text-white" for="phoneNumber">Phone Number</label>
+                            <input type="tel" name="phonenumbertoko" id="phoneNumber" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                      <!-- Jenis layanan -->
+                      <div class="col-md-6 mb-4 pb-2">
+                        <div class="form-outline">
+                            <label class="form-label text-white" for="emailAddress">Jenis Layanan (PC dan/atau Laptop)</label>
+                            <input type="text" name="jenislayanan" id="jenislayanan" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Baris 3 -->
+                    <div class="row">
+                      <!-- Alamat toko -->
+                      <div class="col-md-12 mb-4 pb-2">
+                        <div class="form-outline">
+                            <label class="form-label text-white" for="emailAddress">Alamat Toko</label>
+                            <input type="text" name="alamattoko" id="alamat" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Baris 4 -->
+                    <div class="row">
+                      <!-- Jam operasi toko -->
+                      <div class="col-md-12 mb-4 pb-2">
+                        <div class="form-outline">
+                            <label class="form-label text-white" for="emailAddress">Jam Operasi Toko</label>
+                            <input type="text" name="jamoperasi" id="jamoperasi" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Baris 4 -->
+                    <div class="row">
+                      <!-- Jam operasi toko -->
+                      <div class="col-md-12 mb-4 pb-2">
+                        <div class="form-outline">
+                            <label class="form-label text-white" for="emailAddress">Deskripsi Toko</label>
+                            <input type="text" name="deskripsitoko" id="jamoperasi" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Baris 5 -->
+                    <div class="row">
+                      <!-- Password -->
+                      <div class="col-md-12 mb-3 pb-2">
+                        <div class="form-outline">
+                            <label class="form-label text-white" for="emailAddress">Password</label>
+                            <input type="password" name="passwordtoko" id="password" class="form-control form-control-lg" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Agreement TOS -->
+                    <div class="form-check mt-3">
+                      <input class="form-check-input" name="terms" type="checkbox" value="agree" id="flexCheckDefault">
+                      <label class="form-check-label text-white" for="flexCheckDefault">
+                        I have read and agreed to the terms and condition
+                      </label>
+                    </div>
+                    <!-- Tombol register -->
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-outline-light btn-lg px-5 mt-5">Register</button>
+                    </div>
+                    
+      
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+</div>
+</form>
+</body>
+
+</html>
